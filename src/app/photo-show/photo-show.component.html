@@ -1,4 +1,16 @@
-<div>
-    <button (click)="onClick()" >Fetch New Image</button>
+
+
+<div class="container">
+    
+    <div class="row justify-content-md-center p-5">
+        <div class="card text-center p-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="max-width: 540px;">
+            <h2 class="card-title text-secondary">Photo Generator 📸</h2>
+            <img *ngIf="photoUrl" [src]="photoUrl" alt="" class="card-img-top mx-auto d-block">
+            <!-- <img src="https://images.unsplash.com/photo-1679158322062-6c0a22d1498d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" class="card-img-top mx-auto d-block"> -->
+            <div class="card-block">
+                <p class="card-text text-body-tertiary">Through Unsplash's API we can generate a random photo on request. Just click the button below.</p>
+                <button (click)="onClick()" class="btn btn-primary">Fetch New Image</button>
+            </div>
+        </div>
+    </div>
 </div>
-<img *ngIf="photoUrl" [src]="photoUrl" alt="">
