@@ -1,6 +1,9 @@
-# Photos
+# Photo Generator 📸
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+The Photo Generator is a simple tool to generate random images. The application posts a requests through `Unsplah.com API` to fetch a new image. 
+
+NOTE: Since this is a demo application, the API only allows 50 images to be generated per hour.
 
 ## Development server
 
